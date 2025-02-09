@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Scramblle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="outfit">
+    <main>
+      <h1>Word Scramblle</h1>
+      <div class="output"></div>
+      <div class="row">
+        <div class="tries">
+          <span>Tries (0/5):</span>
+          <ul class="tries-counter">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="mistakes">
+          <span>Mistakes:</span>
+          <span class="mistakes-output"></span>
+        </div>
+      </div>
+      <div class="row input">
+      </div>
+      <div class="row buttons">
+        <button id="random-btn">Random</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </main>
+    <dialog id="success-dialog">
+      <div class="dialog-container">
+        <h3>🎉 Success!</h3>
+        <p>The word was <strong></strong> and you found it!</p>
+        <button id="close-btn">Accept</button>
+      </div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
